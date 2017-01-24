@@ -1,0 +1,28 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Aswathy 2014]{survey-suresh}
+\abntrefinfo{Aswathy}{ASWATHY}{2014}
+{ASWATHY, P. S. J. V. D. D.~R. A state of the art review on the internet of
+  things (iot).
+\emph{International Conference on Science, Engineering and Management
+  Research}, 2014.}
+
+\bibitem[FINEP 2015]{kevin-ashton}
+\abntrefinfo{FINEP}{FINEP}{2015}
+{FINEP. \emph{Kevin Ashton – entrevista exclusiva com o criador do termo
+  “Internet das Coisas”}. 2015.
+Dispon{\'\i}vel em:
+  \url{http://finep.gov.br/noticias/todas-noticias/4446-kevin-ashton-entrevista-exclusiva-com-o-criador-do-termo-internet-das-coisas}.}
+
+\bibitem[Meola 2016]{andrewmeola2016}
+\abntrefinfo{Meola}{MEOLA}{2016}
+{MEOLA, A. \emph{What is the Internet of Things (IoT)?} 2016.
+Dispon{\'\i}vel em:
+  \url{http://www.businessinsider.com/what-is-the-internet-of-things-definition-2016-8}.}
+
+\end{thebibliography}

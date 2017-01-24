@@ -1,0 +1,7 @@
+scopus
+sciencedirect
+ieeexplore
+scielo
+dl.acm.org
+capes
+repositorio.ufsc.br

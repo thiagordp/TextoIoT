@@ -1,0 +1,385 @@
+\documentclass[
+	% -- opções da classe memoir --
+	article,			% indica que é um artigo acadêmico
+	11pt,				% tamanho da fonte
+	oneside,			% para impressão apenas no verso. Oposto a twoside
+	a4paper,			% tamanho do papel. 
+	% -- opções da classe abntex2 --
+	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE % títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	brazil,				% o último idioma é o principal do documento
+	sumario=tradicional
+	]{abntex2}
+
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl} 			% Lista de simbolos
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+% ---
+		
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}				% para geração de dummy text
+% ---
+		
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+% ---
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\titulo{Internet das Coisas}
+\autor{Thiago Raulino Dal Pont}
+\local{Brasil}
+\data{XX de Janeiro de 2017}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={Modelo de artigo científico com abnTeX2},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=blue,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Altera as margens padrões
+% ---
+\setlrmarginsandblock{3cm}{2cm}{*}
+\setulmarginsandblock{3cm}{2cm}{*}
+\checkandfixthelayout
+% ---
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.5cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.0cm}  % tente também \onelineskip
+
+% Espaçamento simples
+\SingleSpacing
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+
+%---
+%
+% Se desejar escrever o artigo em duas colunas, descomente a linha abaixo
+% e a linha com o texto ``FIM DE ARTIGO EM DUAS COLUNAS''. \twocolumn[    		% INICIO DE ARTIGO EM DUAS COLUNAS
+%
+%---
+% página de titulo
+\maketitle
+
+% resumo em português
+\begin{resumoumacoluna}
+ \lipsum[1]
+ 
+ \vspace{\onelineskip}
+ 
+ \noindent
+ \textbf{Palavras-chaves}: amplificador diferencial, amplificador de instrumentação.
+\end{resumoumacoluna}
+
+% ]  				% FIM DE ARTIGO EM DUAS COLUNAS
+% ---
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+% ----------------------------------------------------------
+% Introdução
+% ----------------------------------------------------------
+\section*{Introdução}
+\addcontentsline{toc}{section}{Introdução}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+%%%%%%%%   PARTE 1   %%%%%%%%
+\section{Conceito}
+
+
+% TODO: INTRODUÇÃO
+
+% Contextualização
+
+% REVER
+A tecnologia, com o passar dos anos, está cada vez mais presente nas indústrias, lares, comércios 
+etc. ao mesmo tempo tornando-se indispensável para todas essas entidades. No entanto, nos últimos 
+anos um novo paradigma está emergindo: a Internet das Coisas. A partir dela, a Internet vai deixar 
+de existir como é vista hoje tornando, assim, onipresente.
+
+% O que é 
+
+O conceito de Internet das Coisas (IoT) está relacionado à interconexão de objetos distintos 
+através de uma rede, sendo esta, muitas vezes, a Internet. Desse modo, elementos do mundo real, que 
+antes funcionavam de maneira independente ao meio aos quais estavam inseridos, são capazes de 
+interagir com outros objetos à sua volta e, assim, trocar informações que possam ser relevantes 
+permitindo a agregação de novas funcionalidades.  Além disso, a IoT abre espaço para interação 
+entre o mundo físico e o digital a partir de dispositivos capazes de capturar dados físicos no meio 
+em que estão tais como, temperatura, distância etc., representá-los digitalmente e trasmití-los 
+para outros dispositivos.
+
+	
+O termo ``Internet das Coisas'' foi citado pela primeira vez por Kevin Ashton, diretor executivo da 
+AutoIDCentre do MIT, em 1999 enquanto realizava uma apresentação para promover a ideia do uso de 
+Identificadores de Radio Frequência (RFID) na etiquetagem de produtos. O uso da tecnologia 
+beneficiaria a logística da cadeia de produção \cite{kevin-ashton}. Apesar de o termo IoT ter sido 
+usado apenas em 1999, aplicações práticas da ideia já existiam anos antes. Um exemplo disso, é a 
+torradeira que podia ser ligada e desligada via internet criada em 1990 \cite{survey-suresh}.
+
+
+
+% TODO: Projeções de grandes companhias (número de dispositivos, expansão)
+
+A Internet das Coisas está em grande expansão. Estima-se que em 2020 cerca de 24 bilhões de 
+dispositivos IoT estejam conectados, implicando em cerca de quatro dispositivos por pessoa. Para 
+tanto, em torno de 6 trilhões de dólares serão investidos em desenvolvimento de tecnologias de 
+hardware e software, como aplicações, segurança e dispositivos de hardware. Apesar da grande 
+quantia investida, o setor é visto como promissor. Estima-se será gerado em torno de 13 trilhões de 
+dólares 
+em 2025 \cite{andrewmeola2016}. 
+
+Para conectar uma grande quantidade de objetos são necessárias tecnologias, muitas delas sem fio, 
+que permitam que os dispostivos interajam entre si trocando informações de maneira eficiente. A 
+próxima seção tratará dessas tecnologias e a maneira com são organizadas para formar uma 
+arquitetura. 
+
+Falar sobre as interações (realidade aumentada e tudo mais) proporcionadas 
+pelas tecnologias
+
+% TODO: GANCHO PARA AS TECNOLOGIAS
+
+% TODO: Empresas, associações que abraçaram a ideia
+
+% TODO: Benefícios, facilidade comodidade
+
+%%%%%%%%   PARTE 2   %%%%%%%%
+\section{Tecnologias}
+
+\subsection{Bluetooth}
+
+% O que é
+% MELHORAR e referenciar
+O Bluetooth é uma especificação de rede WPAN, ou seja, rede sem-fio pessoal, sendo descrito e 
+especificado pela IEEE 802.15.1. O Bluetooth foi criado na década de 90 com o objetivo de unir 
+tecnologias distintas, tais como computadores, celulares entre outros (artigo de com. de dados). 
+Além disso uma das principais características da tecnologia \textit{wireless} é o curto alcance de 
+transmissão variando de centímetros até alguns metros (livro-programmers). 
+% TODO: Referenciar o livro do programmers essentials.
+
+A tecnologia vem sendo usada ao longo dos últimos anos em diversas aplicações como transferência de 
+arquivos entre dispositivos, transmissão de áudio entre smartphones e fones sem fio, dispositivos 
+capazes de determinar contexto, como os beacons, entre outros.
+
+% Topologias
+No IEEE 802.15.1 há suporte para criação de redes \textit{ad-hoc}, aos quais, é desnecessário uma 
+infraestrutura de rede para conexão dos dispositivos. A partir disso é possível criar redes 
+chamadas \textit{picorredes}, nas quais os dispositivos são organizados, nesse caso em até oito .
+
+% Características
+A tecnologia Bluetooth opera na faixa regulamentada de 2.4 GHz de uso livre em modo TDM com um 
+delta de $625\mu$s, proporcionando uma taxa de transmissão máxima em torno de 2 Mb/s podendo variar 
+de acordo com o dispositivo e a categoria de tecnologia de Bluetooth utilizada. (Especificação v5).
+
+% Forma de conexão.
+
+\subsubsection{Categorias}
+
+Segundo X, o Bluetooth pode ser categorizado em:
+
+\subsubsubsection{BR/EPR}
+%2.0 a 2.1
+
+% REVER
+Esta é a subdivisão mais popularizada do Bluetooth presente desde a versão $2.0$ do Bluetooth, onde 
+as 
+principais características são alta 
+velocidade de transmissão alta em relação à outra categoria e necessidade de conexão através de 
+pareamento. O pareamento consiste em ..., onde os dispositivos confirmam a conexão. A partir disso, 
+há um transmissão contínua de dados. Uma desvantagem é o consumo de energia considerável para o 
+funcionamento do Bluetooth, devido a .... 
+% taxa de dados
+A taxa de transmissão gira em torno de 2 a 3 Mb/s.
+ 
+\subsubsubsection{BLE (Smart)}
+% 4.0, 4.1, 4.2
+
+% O que é
+O \textit{Bluetooth Low Energy} (BLE) é a mais recente subdivisão do Bluetooth (Rever) incorporada 
+a partir da versão 4.0 além de ser a menos comum.
+% Foco
+BLE está centrado no baixo consumo de energia para permitir que certos 
+dispositivos não precisem recarregar ou trocar suas fontes de carga, muitas vezes uma bateria, por 
+longos períodos, que podem chegar a anos. 
+% Pareamento
+Para uma transmissão, ao contrário do BR/EPR, não é necessária uma conexão através de pareamento.
+%Taxa e alcance
+Além disso, a taxa de dados é baixa e o alcance reduzido. A baixa taxa de dados decorre do modo de 
+funcionamento dos dispositivos BLE, aos quais, enviam dados em rajadas, ou seja, de tempos em 
+tempos dados são transmitidos em forma de \textit{broadcast} e os dispositivos que estiverem por 
+perto receberão esses dados. Nos intervalos de tempo em que o dispositivo não transmite, ele 
+``dorme''.
+
+%Aplicação
+A aplicação prática dessas características está na IoT através de \textit{beacons}, aos quais 
+incorporam o BLE. Os beacons foram introduzidos pela \textit{Apple} em XXXX com o nome de 
+\textit{iBeacon}, com o objetivo de XXXXX. Com esses dispositivos é possível aprimorar a 
+experiência do usuário em estabelecimentos como museus, supermercados, shoppings, estádios 
+(referenciar aplicações), através da detecção de contexto, na qual, a partir da detecção de um 
+beacon, uma aplicação móvel em um smartphone de um usuário, é possível exibir conteúdos, indicar 
+promoções entre outros relacionados aquele dispositivo BLE.
+
+
+% Taxa de dados
+
+
+% Formato de transmissão
+
+% Internet das coisas
+
+
+\subsubsubsection{Dual-mode}
+%
+
+\subsubsection{Bluetooth 5.0}
+
+
+
+\subsection{RFID}
+
+\subsection{NFC}
+
+\subsection{Zigbee}
+
+\subsection{Wi-Fi} % FAZER ??
+
+\section{Aplicações}
+
+Pouco tempo após à primeira referência a IoT, em 2000, uma empresa de grande porte, a LG, lançou 
+um produto baseado na ideia de IoT: uma geladeira capaz de verificar se os produtos contidos nela 
+foram reabastecidos \cite{survey-suresh}.
+
+
+
+% TODO: PRESENTE
+Atualmente, a IoT evoluiu e já está presente em diversos setores como 
+
+% Smart home
+% Smart grid
+% Indústrias
+% Transportes
+
+
+% TODO: FUTURO
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ---
+% Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
+% ---
+\bookmarksetup{startatroot}% 
+% ---
+
+% ---
+% Conclusão
+% ---
+\section*{Considerações finais}
+\addcontentsline{toc}{section}{Considerações finais}
+
+
+
+
+
+% ]  				% FIM DE ARTIGO EM DUAS COLUNAS
+% ---
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+\bibliography{ref}
+
+
+\end{document}
