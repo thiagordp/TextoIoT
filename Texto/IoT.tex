@@ -257,18 +257,19 @@ capazes de determinar contexto, como os beacons, entre outros.
 % Topologias
 No IEEE 802.15.1 há suporte para criação de redes \textit{ad-hoc}, aos quais, é desnecessário uma 
 infraestrutura de rede para conexão dos dispositivos. A partir disso é possível criar redes 
-chamadas \textit{picorredes}, nas quais os dispositivos são organizados, nesse caso em até oito .
+chamadas \textit{picorredes}, nas quais os dispositivos são organizados em até oito associados.
 
 % Características
 A tecnologia Bluetooth opera na faixa regulamentada de 2.4 GHz de uso livre em modo TDM com um 
-delta de $625\mu$s, proporcionando uma taxa de transmissão máxima em torno de 2 Mb/s podendo variar 
+delta de $625\mu$s, proporcionando uma taxa de transmissão máxima em torno de 2 Mb/s, podendo 
+variar 
 de acordo com o dispositivo e a categoria de tecnologia de Bluetooth utilizada. (Especificação v5).
 
 % Forma de conexão.
 
 \subsubsection{Categorias}
 
-Segundo X, o Bluetooth pode ser categorizado em:
+Segundo (especificação bluetooth), o Bluetooth pode ser categorizado em:
 
 \subsubsubsection{BR/EPR}
 %2.0 a 2.1
@@ -277,54 +278,63 @@ Segundo X, o Bluetooth pode ser categorizado em:
 Esta é a subdivisão mais popularizada do Bluetooth presente desde a versão $2.0$ do Bluetooth, onde 
 as 
 principais características são alta 
-velocidade de transmissão alta em relação à outra categoria e necessidade de conexão através de 
-pareamento. O pareamento consiste em ..., onde os dispositivos confirmam a conexão. A partir disso, 
+velocidade de transmissão alta em relação à outra categoria, baixo alcance e necessidade de conexão 
+através de pareamento. O pareamento consiste em ..., onde os dispositivos confirmam a conexão. A 
+partir disso, 
 há um transmissão contínua de dados. Uma desvantagem é o consumo de energia considerável para o 
 funcionamento do Bluetooth, devido a .... 
 % taxa de dados
-A taxa de transmissão gira em torno de 2 a 3 Mb/s.
+A taxa de transmissão gira em torno de 2Mb/s.
  
 \subsubsubsection{BLE (Smart)}
 % 4.0, 4.1, 4.2
 
 % O que é
 O \textit{Bluetooth Low Energy} (BLE) é a mais recente subdivisão do Bluetooth (Rever) incorporada 
-a partir da versão 4.0 além de ser a menos comum.
+a partir da versão 4.0 em 2011 além de ser a menos comum (Bluetooth-vs-BLE).
 % Foco
 BLE está centrado no baixo consumo de energia para permitir que certos 
 dispositivos não precisem recarregar ou trocar suas fontes de carga, muitas vezes uma bateria, por 
 longos períodos, que podem chegar a anos. 
 % Pareamento
-Para uma transmissão, ao contrário do BR/EPR, não é necessária uma conexão através de pareamento.
+Para uma transmissão, ao contrário do BR/EPR, não é necessário um pareamento para realizar uma 
+conexão, além disso esta tem curta duração, na ordem de milissegundos.
 %Taxa e alcance
-Além disso, a taxa de dados é baixa e o alcance reduzido. A baixa taxa de dados decorre do modo de 
+Além disso, a taxa de dados é baixa e o alcance alto. A baixa taxa de dados decorre do modo de 
 funcionamento dos dispositivos BLE, aos quais, enviam dados em rajadas, ou seja, de tempos em 
-tempos dados são transmitidos em forma de \textit{broadcast} e os dispositivos que estiverem por 
-perto receberão esses dados. Nos intervalos de tempo em que o dispositivo não transmite, ele 
-``dorme''.
+tempos dados são transmitidos em forma de \textit{broadcast} e os dispositivos que estiverem 
+conectados receberão esses dados. Nos intervalos de tempo em que o dispositivo não transmite, ele 
+``dorme'', isto é, entra em modo de consumo mínimo a fim de poupar energia.
 
 %Aplicação
-A aplicação prática dessas características está na IoT através de \textit{beacons}, aos quais 
-incorporam o BLE. Os beacons foram introduzidos pela \textit{Apple} em XXXX com o nome de 
-\textit{iBeacon}, com o objetivo de XXXXX. Com esses dispositivos é possível aprimorar a 
-experiência do usuário em estabelecimentos como museus, supermercados, shoppings, estádios 
-(referenciar aplicações), através da detecção de contexto, na qual, a partir da detecção de um 
-beacon, uma aplicação móvel em um smartphone de um usuário, é possível exibir conteúdos, indicar 
-promoções entre outros relacionados aquele dispositivo BLE.
-
-
-% Taxa de dados
-
-
-% Formato de transmissão
-
-% Internet das coisas
-
+A aplicação prática dessas características está na IoT através de \textit{beacons} e  
+\textit{wearables}, aos quais incorporam o BLE. Os beacons foram introduzidos pela \textit{Apple} 
+em XXXX com o nome de \textit{iBeacon}, com o objetivo de XXXXX. Com esses dispositivos é possível 
+aprimorar a experiência do usuário em estabelecimentos como museus, supermercados, shoppings, 
+estádios (referenciar aplicações), através da identificação de contexto, na qual, a partir da 
+detecção de um beacon, uma aplicação móvel em um smartphone de um usuário pode exibir conteúdos, 
+indicar promoções entre outros relacionados aquele dispositivo BLE.
 
 \subsubsubsection{Dual-mode}
 %
+Esta categoria se refere a dispositivos, como \textit{smartphones} que precisam 
+se conectar tanto com dispositivos BR/EDR, como fones de ouvido, e BLE, como 
+\textit{beacons}(blu-core-specification).
 
 \subsubsection{Bluetooth 5.0}
+
+A versão 5.0 do Bluetooth foi lançada em seis de dezembro de 2016 (adopted-specfi) e trás consigo 
+aprimoramentos em desempenho e segurança, garantindo duas vezes mais velocidade, quatro vezes mais 
+alcance, oito vezes mais taxa de dados e, por fim, maior coexistência.  (specification-bluetooth5).
+
+Com a nova versão, veio a flexibilidade para construção de soluções baseadas em necessidade. 
+Parâmetros como alcance, velocidade e segurança podem ser regulados para diversos objetivos a 
+depender das aplicações. (specification-bluetooth5).
+
+Algumas atualizações contribuem para a redução de interferência com outras tecnologias sem fio, 
+dessa forma, proporciona melhor coexistência entre dispositivos Bluetooth e de outras tecnologias, 
+dentro do cenário emergente da IoT. (bluetooth-core-spec).
+
 
 
 

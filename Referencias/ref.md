@@ -15,3 +15,6 @@ https://brasil.uxdesign.cc/tudo-o-que-voc%C3%AA-precisa-saber-para-come%C3%A7ar-
 
 A Apple, como não podia deixar de ser, já está utilizando a tecnologia em 254 lojas nos EUA. As funcionalidades já estão embutidas na versão oficial do aplicativo da Apple Store para iOS. O que ele faz? Quando o usuário se aproxima de uma loja física, o aplicativo oferece toda uma camada extra de informações e serviços que são específicos para aquela unidade — como por exemplo ofertas locais, tamanho da fila para ser atendido no Genius Bar, eventos e treinamentos que estão agendados ali na loja etc.
 (tem mais no site).
+
+https://www.bluetooth.com/what-is-bluetooth-technology/how-it-works/br-edr
+https://www.bluetooth.com/specifications/adopted-specifications
