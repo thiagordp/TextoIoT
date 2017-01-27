@@ -18,3 +18,13 @@ A Apple, como não podia deixar de ser, já está utilizando a tecnologia em 254
 
 https://www.bluetooth.com/what-is-bluetooth-technology/how-it-works/br-edr
 https://www.bluetooth.com/specifications/adopted-specifications
+
+
+01/2016/2016
+http://nfc-forum.org/our-work/specifications-and-application-documents/specifications/tag-type-technical-specifications/
+http://nfc-forum.org/our-work/specifications-and-application-documents/specifications/
+https://nxp-rfid.com/applications/
+http://blog.atlasrfidstore.com/what-is-rfid-used-for-in-applications
+http://www.businessinsider.com/top-emerging-applications-for-beacons-2014-4
+http://www.infoworld.com/article/2606357/mobile-technology/160948-7-cool-uses-of-beacons-you-may-not-expect.html
+http://blog.mowowstudios.com/2015/02/100-use-cases-examples-ibeacon-technology/ - opcional

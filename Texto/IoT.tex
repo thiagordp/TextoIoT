@@ -529,7 +529,97 @@ URL, texto simples entre outros.
 % ==================================================================================================
 \subsection{Zigbee}
 
+% WHAT IS IT
+O Zigbee é um protocolo padrão de comunicação de baixa-potência para redes sem-fio \textit{mesh}, 
+ao qual permite que diversos dispositivo trabalharem em conjunto (livro).
 
+O Zigbee é descrito como um conjunto de camadas implementadas sobre o IEEE 802.15.4, ao qual 
+especifica a camada física(PHY) e o controle de acesso ao meio (MAC) para 
+redes sem-fio de baixa potência. (ieee-802.15.4-2011) 
+
+As camadas do Zigbee, de acordo com (), fazem:
+
+\begin{itemize} \parskip -4pt
+	\item \underline{Roteamento:} Tabelas de roteamento que definem como um nó envia dados até um 
+	destino
+	\item \underline{Rede Adhoc:} Criação automática de rede
+	\item \underline{\textit{Self healing mesh}:} Descobe se nós se perderam da rede e a 
+	reconfigura para garantir uma rota para os dispositivos conectados ao nó faltantes
+\end{itemize}
+
+O Zigbee opera na faixa não licenciada ISM, de 2,4GHz, o que permite sua expansão global (REVER)
+
+O Zigbee especifica que os nós das redes criadas possam assumir papeis específicos. Cada nó deve 
+assumir uma das categorias a seguir:(xbee-book)
+
+\begin{itemize} \parskip -4pt
+	\item Coordenador: Responsável por criar a rede, distribuir endereços, manter a rede segura, 
+	mantê-la em funcionamento entre outras funções que caracterizam a rede. Cada rede tem um e 
+	apenas um coordenador.
+	\item Roteador: Tem capacidade de unir redes existentes, enviar e receber informações e rotear 
+	informações, atuando como um intermediário entre dispositivos que, por estarem muito distantes 
+	entre si, não podem se comunicar diretamente. É permitido às redes terem múltiplos roteadores, 
+	podendo também não possuirem nenhum e, caso exista, cada roteador deve estar conectado a um 
+	coordenador ou outro roteador.
+	\item Dispositivo final: È um tipo de nó capaz de se unir a redes além de enviar e receber 
+	informações da rede. Desse modo, podem se desligar de tempos em tempos para poupar energia. 
+	Caso mensagens para um dispositivo final desligados sejam detectadas, o nó responsável por ele, 
+	podendo ser um coordenador ou roteador, armazenas as mensagens até que o nó desperte.
+\end{itemize}
+
+Há diversas topologias suportadas, nas quais, englobam os três tipos de nós e suas possíveis 
+maneiras de organização (xbee-book):
+
+\begin{itemize} \parskip -4pt
+	\item Par a par: Uma rede formada apenas por dois nós, sendo um deles, obrigatoriamente, um 
+	coordenador e nó restante podendo ser um roteador ou dispositivo final.
+	\item Estrela: Nessa topologia, o coordenador se situa no centro da rede e os demais nós, 
+	roteadores ou dispositivos finais, conectados apenas a ele, formando uma rede no formato de 
+	estrela.
+	\item Mesh: Os dispositivos finais circundam os demais nós roteadores e coordenador. O 
+	coordenador e roteadores atuam como intermediários, roteando mensagens para dispositivos 
+	finais, outros roteadores ou para o coordenador. Apesar da nova função do coordenador, este 
+	permanece no controle e gerenciamento da rede.
+	\item Cluster tree: Nessa topologia, cada roteador é responsável por um conjunto de 
+	dispositivos finais. As mensagens vindas desses dispositivos devem ser encaminhadas 
+	primeiramente para seu roteador responsável para então ser encaminhada ao destino na rede.
+\end{itemize}
+
+% TODO: Colocar ilustração das topologias
+
+O Zigbee define três maneiras de identificação de nodos, que podem utilizadas em uma aplicação para 
+diferenciar os nós.
+
+\begin{itemize} \parskip -4pt
+	\item 64 bits: Único e permanente para cada rádio fabricado.
+	\item 16 bits: Dinamicamente configurado pelo coordenador ao entrar em uma rede. É único apenas 
+	dentro do contexto da rede.
+	\item Node Id: Pequena cadeia de texto. Não é possível garantir sua unicidade em nenhum 
+	contexto, apesar disso, é mais amigável aos olhos humanos.
+\end{itemize}
+
+\subsubsection{Criação de uma redes}
+
+Cada rede de sensores deve possuir um identificador chamado endereço PAN (Personal Area Network). 
+Além disso, cada nó deve ter o mesmo PAN configurado e o mesmo canal de comunicação, que é 
+escolhido de acordo com a disponibilidade pelo coordenador. 
+
+Para que uma mensagem chegue à um destino, é necessário que o nó emissor tenha conhecimento do 
+endereço do nó destinatário do pacote.
+
+
+\subsubsection{XBee}
+
+O XBee é um dispositivo fabricado pela Digi. Existem cerca de 
+30 combinações de hardware, protocolos de \textit{firmware}, potência de transmissão e antenas.
+
+Apesar das diversas combinações, há duas versões básicas do XBee: Série 1 e Série 2.
+
+Os nós XBee Série 1 proveem comunicações ponto a ponto, bem como uma implementação proprietária de 
+rede \textit{mesh}. Já os nós Série 2 permitem diversas derivações de padrões de redes mesh Zigbee.
+
+% IMAGEM XBEE S1 e XBEE S2
+% ==================================================================================================
 \section{Aplicações}
 
 Pouco tempo após à primeira referência a IoT, em 2000, uma empresa de grande porte, a LG, lançou 
