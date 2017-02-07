@@ -28,3 +28,21 @@ http://blog.atlasrfidstore.com/what-is-rfid-used-for-in-applications
 http://www.businessinsider.com/top-emerging-applications-for-beacons-2014-4
 http://www.infoworld.com/article/2606357/mobile-technology/160948-7-cool-uses-of-beacons-you-may-not-expect.html
 http://blog.mowowstudios.com/2015/02/100-use-cases-examples-ibeacon-technology/ - opcional
+
+27/01/2016
+http://www.smarthomeusa.com/smarthome/
+
+30/01/2016
+https://www.cnet.com/news/at-ge-making-the-most-advanced-locomotives-in-history/
+https://www.ge.com/br/sobre
+https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E
+
+31/01/2016
+http://www.ti.com/lsds/ti/applications/industrial/grid-infrastructure/overview.page
+https://www.microsoft.com/microsoft-hololens/en-us/hololens-commercial
+
+01/02/2016
+http://electronics.howstuffworks.com/gadgets/fitness/sony-smartband.htm
+
+
+

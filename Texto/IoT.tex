@@ -87,7 +87,7 @@
 		pdfauthor={\@author},
     	pdfsubject={Modelo de artigo científico com abnTeX2},
 	    pdfcreator={LaTeX with abnTeX2},
-		pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{artigo científico}, 
 		colorlinks=true,       		% false: boxed links; true: colored links
     	linkcolor=blue,          	% color of internal links
     	citecolor=blue,        		% color of links to bibliography
@@ -226,10 +226,8 @@ em 2025 \cite{andrewmeola2016}.
 Para conectar uma grande quantidade de objetos são necessárias tecnologias, muitas delas sem fio, 
 que permitam que os dispostivos interajam entre si trocando informações de maneira eficiente. A 
 próxima seção tratará dessas tecnologias e a maneira com são organizadas para formar uma 
-arquitetura. 
-
-Falar sobre as interações (realidade aumentada e tudo mais) proporcionadas 
-pelas tecnologias
+arquitetura. A seção seguinte apresenta alguns novos ``conceitos(sobre os smart tudo)'' que a IoT 
+trouxe e algumas aplicações específicas para algumas das mais variadas áreas já existentes.
 
 % TODO: GANCHO PARA AS TECNOLOGIAS
 
@@ -378,12 +376,11 @@ dentro do cenário emergente da IoT \cite{bluetoothsig2016}.
 
 O RFID (Indentificação por Rádio Frequência) é uma tecnologia de identificação automática, entre 
 diversas outras como código de barras, cartão inteligente e procedimentos biométricos, no entanto 
-se distingue pelo modo de funcionamento, ou seja, por ondas 
-eletromagnéticas. 
+se distingue pelo modo de funcionamento, ou seja, por ondas eletromagnéticas. 
 % INFLUÊNCIA EXTERNAS NO FUNCIONAMENTOS
 Por outro lado, o RFID se destaca em relação às outras tecnologias em relação às 
 influências externas no seu funcionamento, como sujeira, posição de leitura. Desse modo, não é 
-necessário nem limpar ou reposicionar o dispositivo RFID para efetuar a leitura. (rfidhandbook)
+necessário nem limpar ou reposicionar o dispositivo RFID para efetuar a leitura \cite{klaus2011}. 
 
 % LEITOR E TRANSPONDER
 No RFID, os dados são transmitidos através de ondas de rádio entre dois dispositivos: 
@@ -427,9 +424,8 @@ Uma tag passiva é mostrada na Figura \ref{fig:passive-rfid}.
 % PASSIVO
 
 % FREQ. DE OPERAÇÃO
-Uma das características mais importante dos dispositivos RFID é a frequência de operação já que ela 
-influi no distância máxima de operação. Tal fator é determinado pelo leitor. 
-
+Uma das características mais importantes dos dispositivos RFID é a frequência de operação já que 
+ela influi no distância máxima de operação. Tal fator é determinado pelo leitor. 
 Os dispositivos são classificados, de acordo com a frequência de operação, em três grupos:
 
 \begin{itemize} \parskip -4pt
@@ -474,14 +470,13 @@ interagir com tags RFID, por exemplo.
 Como o RFID, o NFC funciona através de ondas eletromagnéticas com uma taxa de transmissão máxima de 
 424kbps \cite{nfcforumabout2017}. Além disso, pode operar em dois modos de comunicação 
 \cite{brianjepsondoncolemantomigoe2014}: ativo e passivo. Assim como no RFID, é possível que os 
-dispositivos NFC que contenham 
-os dados usema energia do leitor para transmitir seus dados, no modo passivo ou usem uma fonte 
-própria para tal procedimento, no modo ativo.
+dispositivos NFC que contenham os dados usem a energia do leitor para transmitir seus dados, no 
+modo passivo, ou usem uma fonte própria para tal procedimento, no modo ativo.
 
 
 % MODOS DE OPERAÇÃO
-Outra característica importante no NFC são os modos de operação. De acordo com (NFC-forum) existem 
-três modos de operação:
+Outra característica importante no NFC são os modos de operação. De acordo com 
+\cite{nfcforumabout2017} existem três modos:
 
 \begin{itemize} \parskip -4pt
 	\item \textit{Leitor/Escritor de tag}: Tem por objetivo ligar o mundo físico ao digital através 
@@ -515,8 +510,7 @@ Leitor/Escritor descrito anteriorente :
 
 O NFC possui um padrão com o qual dispositivos devem estar formatados, o NDEF (\textit{NFC Data 
 Exchange Format}) um formato comum de comunicação \cite{brianjepsondoncolemantomigoe2014}. Desse 
-modo, os dados 
-armazenados em tags devem estar gravados nesse formato. A partir do NDEF é possível 
+modo, os dados armazenados em tags devem estar gravados nesse formato. A partir do NDEF é possível 
 armazenar e trocar documentos binários como MIME, que incluem imagens, arquivos PDF entre outros, 
 URL, texto simples entre outros.
 
@@ -531,13 +525,13 @@ URL, texto simples entre outros.
 
 % WHAT IS IT
 O Zigbee é um protocolo padrão de comunicação de baixa-potência para redes sem-fio \textit{mesh}, 
-ao qual permite que diversos dispositivo trabalharem em conjunto (livro).
+ao qual permite que diversos dispositivo trabalharem em conjunto \cite{FALUDI2010}.
 
-O Zigbee é descrito como um conjunto de camadas implementadas sobre o IEEE 802.15.4, ao qual 
+O Zigbee é descrito como um conjunto de camadas implementadas sobre o IEEE 802.15.4 \cite{FALUDI2010}, ao qual 
 especifica a camada física(PHY) e o controle de acesso ao meio (MAC) para 
-redes sem-fio de baixa potência. (ieee-802.15.4-2011) 
+redes sem-fio de baixa potência \cite{IEEE802154_2011}.
 
-As camadas do Zigbee, de acordo com (), fazem:
+As camadas do Zigbee, de acordo com \cite{FALUDI2010}, fazem:
 
 \begin{itemize} \parskip -4pt
 	\item \underline{Roteamento:} Tabelas de roteamento que definem como um nó envia dados até um 
@@ -547,40 +541,40 @@ As camadas do Zigbee, de acordo com (), fazem:
 	reconfigura para garantir uma rota para os dispositivos conectados ao nó faltantes
 \end{itemize}
 
-O Zigbee opera na faixa não licenciada ISM, de 2,4GHz, o que permite sua expansão global (REVER)
+O Zigbee opera na faixa não licenciada ISM, de 2,4GHz, o que permite sua expansão global e, assim, ser capaz de operar em qualquer local do mundo.
 
 O Zigbee especifica que os nós das redes criadas possam assumir papeis específicos. Cada nó deve 
-assumir uma das categorias a seguir:(xbee-book)
+assumir uma das categorias a seguir \cite{FALUDI2010}:
 
 \begin{itemize} \parskip -4pt
-	\item Coordenador: Responsável por criar a rede, distribuir endereços, manter a rede segura, 
+	\item \textit{Coordenador}: Responsável por criar a rede, distribuir endereços, manter a rede segura, 
 	mantê-la em funcionamento entre outras funções que caracterizam a rede. Cada rede tem um e 
 	apenas um coordenador.
-	\item Roteador: Tem capacidade de unir redes existentes, enviar e receber informações e rotear 
+	\item \textit{Roteador}: Tem capacidade de unir redes existentes, enviar e receber informações e rotear 
 	informações, atuando como um intermediário entre dispositivos que, por estarem muito distantes 
 	entre si, não podem se comunicar diretamente. É permitido às redes terem múltiplos roteadores, 
-	podendo também não possuirem nenhum e, caso exista, cada roteador deve estar conectado a um 
+	podendo também não possuírem nenhum e, caso exista, cada roteador deve estar conectado a um 
 	coordenador ou outro roteador.
-	\item Dispositivo final: È um tipo de nó capaz de se unir a redes além de enviar e receber 
-	informações da rede. Desse modo, podem se desligar de tempos em tempos para poupar energia. 
-	Caso mensagens para um dispositivo final desligados sejam detectadas, o nó responsável por ele, 
-	podendo ser um coordenador ou roteador, armazenas as mensagens até que o nó desperte.
+	\item \textit{Dispositivo final}: É um tipo de nó capaz de se unir a redes além de enviar e receber 
+	informações da rede. Além disso, podem se desligar de tempos em tempos para poupar energia. 
+	Caso mensagens para um dispositivo final desligado sejam detectadas, o nó responsável por ele, 
+	podendo ser um coordenador ou roteador, armazena as mensagens até que o nó desperte.
 \end{itemize}
 
 Há diversas topologias suportadas, nas quais, englobam os três tipos de nós e suas possíveis 
-maneiras de organização (xbee-book):
+maneiras de organização \cite{FALUDI2010}:
 
 \begin{itemize} \parskip -4pt
-	\item Par a par: Uma rede formada apenas por dois nós, sendo um deles, obrigatoriamente, um 
+	\item \textit{Par a par}: Uma rede formada apenas por dois nós, sendo um deles, obrigatoriamente, um 
 	coordenador e nó restante podendo ser um roteador ou dispositivo final.
-	\item Estrela: Nessa topologia, o coordenador se situa no centro da rede e os demais nós, 
+	\item \textit{Estrela}: Nessa topologia, o coordenador se situa no centro da rede e os demais nós, 
 	roteadores ou dispositivos finais, conectados apenas a ele, formando uma rede no formato de 
 	estrela.
-	\item Mesh: Os dispositivos finais circundam os demais nós roteadores e coordenador. O 
+	\item \textit{Mesh}: Os dispositivos finais circundam os demais nós roteadores e coordenador. O 
 	coordenador e roteadores atuam como intermediários, roteando mensagens para dispositivos 
 	finais, outros roteadores ou para o coordenador. Apesar da nova função do coordenador, este 
 	permanece no controle e gerenciamento da rede.
-	\item Cluster tree: Nessa topologia, cada roteador é responsável por um conjunto de 
+	\item \textit{Cluster tree}: Nessa topologia, cada roteador é responsável por um conjunto de 
 	dispositivos finais. As mensagens vindas desses dispositivos devem ser encaminhadas 
 	primeiramente para seu roteador responsável para então ser encaminhada ao destino na rede.
 \end{itemize}
@@ -598,13 +592,13 @@ diferenciar os nós.
 	contexto, apesar disso, é mais amigável aos olhos humanos.
 \end{itemize}
 
-\subsubsection{Criação de uma redes}
+\subsubsection{Criação de uma rede}
 
 Cada rede de sensores deve possuir um identificador chamado endereço PAN (Personal Area Network). 
 Além disso, cada nó deve ter o mesmo PAN configurado e o mesmo canal de comunicação, que é 
 escolhido de acordo com a disponibilidade pelo coordenador. 
 
-Para que uma mensagem chegue à um destino, é necessário que o nó emissor tenha conhecimento do 
+Para que uma mensagem chegue a um destino, é necessário que o nó emissor tenha conhecimento do 
 endereço do nó destinatário do pacote.
 
 
@@ -622,23 +616,71 @@ rede \textit{mesh}. Já os nós Série 2 permitem diversas derivações de padr�
 % ==================================================================================================
 \section{Aplicações}
 
-Pouco tempo após à primeira referência a IoT, em 2000, uma empresa de grande porte, a LG, lançou 
-um produto baseado na ideia de IoT: uma geladeira capaz de verificar se os produtos contidos nela 
-foram reabastecidos \cite{survey-suresh}.
+\subsection{Smart home}
+
+Uma \textit{Smart home} ou casa inteligente é formada por um conjunto de sensores e atuadores 
+conectados em rede, aos quais, podem se comunicar entre si e que permitem ao morador o controle de 
+maneira remota de diversos dispositivos tais como lâmpadas \cite{mandula2015}, 
+condicionamento de ar, segurança entre outros.
+
+A empresa \textit{Amazon}, empresa de tecnologia dos Estados Unidos, oferece o \textit{Amazon 
+Echo}, um dispositivo que oferece diversas funcionalidades multimídia, como reprodução de músicas 
+através 
+de controle por voz, inclusive se algo estiver tocando, além de oferecer informações como previsão 
+do tempo, notícias, tráfego entre outros através do \textit{Alexa Voice Service}. É capaz de 
+controlar a luz, tomadas e termostatos além de ser compatível com produtos de empresas, como 
+Samsung, Philips entre outras, com foco em \textit{smart homes} \cite{amazon2017}.
+
+\subsection{Smart grid}
+
+\textit{Smart grid} é uma rede elétrica inteligente, na qual, através da tecnologia coleta dados de 
+consumo e dos distribuidores toma ações a partir deles, tornando o sistema mais eficiente, seguro 
+e sustentável \cite{CECILIA2016}. As smart grids têm três componentes importantes: rede de 
+transmissão inteligente, às quais contêm sensores, troca de informações, controle e tecnologias de 
+comunicação que proporcionam uma transmissão eficiente, tecnologia da informação e comunicação de 
+smart grid  e tecnologia de medição inteligente, no qual, além de realizar medições como os 
+equipamentos tradicionais, é capaz de trocar informações com a rede inteligente. 
+
+Empresas como a \textit{Texas Instruments} (TI) têm investido em soluções para smart grid que 
+proporcionam segurança, eficiência e inteligência. A TI oferece soluções para monitoramento da rede 
+através de medidores de eletricidade, gás e calor, além de tecnologias para comunicação como o 
+\textit{Power Line Communications} entre outras \cite{texasinstruments2017}.
+
+%\subsection{Smart city}
+% Smart city 
+% Tudo conectado
+% Eficiência
+
+\subsection{Wearables}
+
+\textit{Wearables} são dispositivos computacionais vestíveis, ou seja, são itens que uma pessoa pode usar no dia a dia como, roupas, relógios, óculos, sapatos entre outros e, ainda obter novas funcionalidades, graças à presença da tecnologia nesses dispositivos. Isso é possível devido a sensores aos quais medem sinais vitais do corpo humano e dados do ambiente, a depender da aplicação, além de pequenos equipamentos de hardware responsáveis por ler os dados dos sensores e comandos do usuário e assim tomar as ações necessárias de acordo com a situação.
+
+Os \textit{wearables} têm aplicações nas mais diversas áreas, partindo das áreas da saúde e esportes até lazer e trabalho. 
+
+Algumas empresas têm investido na área de dispositivos vestíveis. Um exemplo é a Microsoft que vem desenvolvendo o \textit{Holo Lens}, um dispositivo que se assemelha a um óculos, com foco em realidade aumentada. A tecnologia pode ser usada na concepção e design de produtos, educação, astronomia entre outros.
+
+Outra tecnologia em ascensão é o \textit{smart watch}, relógio digital conectado à internet, dotado de aplicativos entre outras funções que vão além de mostrar as horas.
+
+Na área de esportes e saúde, existem as \textit{smart bands}, pulseiras capazes de monitorar sinais, como batimentos além das calorias eliminadas durante um exercício, distância percorrida entre outros.
 
 
+\subsection{Indústrias}
+% Quarta revolução industrial,
 
-% TODO: PRESENTE
-Atualmente, a IoT evoluiu e já está presente em diversos setores como 
+% Apoio a logística
 
-% Smart home
-% Smart grid
-% Indústrias
-% Transportes
+\subsection{Transportes}
 
+
+A empresa \textit{General Eletric} (GE), a maior empresa digital industrial do mundo, atua em diversos setores como saúde, aviação, transporte, energias renovável, entre outros \cite{generalelectric2017} . A empresa fabrica uma locomotiva, modelo \textit{Evolution}, com cerca de 250 sensores, resultando em 150 mil leituras por minuto. Com a leitura dos sensores, dados como tempo, pressão de óleo, temperatura, velocidade entre outros, podem ser utilizado para determinar a performance da máquina em um dado momento. Além disso, é possível prever quando surgirá algum problema, devido a algum componente que indica falha, a partir do software de análise em escala industrial \textit{Predix} \cite{danielterdiman2014}.
+
+
+\subsection{Turismo}
+% Exemplo de turismo do artigo
+Uma aplicação proposta consiste em um sistema de informação turístico com intuito de expandir a experiência dos visitantes nos diversos pontos turísticos no Japão. Isso é possível graças ao uso de beacons, sensores sem fio descritos na seção anterior, e realidade 
+aumentada, viabilizada por uma aplicação móvel \cite{SHIBATA2016}. 
 
 % TODO: FUTURO
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ---

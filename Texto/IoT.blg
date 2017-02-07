@@ -17,6 +17,30 @@ Warning--entry type for "kevin-ashton" isn't style-file defined
 --line 1 of file ref.bib
 Warning--entry type for "andrewmeola2016" isn't style-file defined
 --line 18 of file ref.bib
+Warning--entry type for "bluetoothSIG2017" isn't style-file defined
+--line 28 of file ref.bib
+Warning--entry type for "jimkardach2008" isn't style-file defined
+--line 36 of file ref.bib
+Warning--entry type for "sig2017" isn't style-file defined
+--line 53 of file ref.bib
+Warning--entry type for "apple2014" isn't style-file defined
+--line 62 of file ref.bib
+Warning--entry type for "linklabs2015" isn't style-file defined
+--line 70 of file ref.bib
+Warning--entry type for "bluetoothsig2016" isn't style-file defined
+--line 78 of file ref.bib
+Warning--entry type for "nfcforumtypespec2017" isn't style-file defined
+--line 110 of file ref.bib
+Warning--entry type for "nfcforumabout2017" isn't style-file defined
+--line 128 of file ref.bib
+Warning--entry type for "amazon2017" isn't style-file defined
+--line 174 of file ref.bib
+Warning--entry type for "texasinstruments2017" isn't style-file defined
+--line 192 of file ref.bib
+Warning--entry type for "generalelectric2017" isn't style-file defined
+--line 200 of file ref.bib
+Warning--entry type for "danielterdiman2014" isn't style-file defined
+--line 208 of file ref.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -26,45 +50,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 4 entries,
+You've used 24 entries,
             6714 wiz_defined-function locations,
-            1212 strings with 9897 characters,
-and the built_in function-call counts, 6473 in all, are:
-= -- 920
-> -- 45
-< -- 206
-+ -- 268
-- -- 15
-* -- 346
-:= -- 842
-add.period$ -- 11
-call.type$ -- 4
-change.case$ -- 22
-chr.to.int$ -- 4
-cite$ -- 3
-duplicate$ -- 698
-empty$ -- 199
-format.name$ -- 69
-if$ -- 1216
-int.to.chr$ -- 0
+            1313 strings with 13457 characters,
+and the built_in function-call counts, 49784 in all, are:
+= -- 6685
+> -- 423
+< -- 1788
++ -- 1980
+- -- 137
+* -- 2768
+:= -- 5912
+add.period$ -- 98
+call.type$ -- 24
+change.case$ -- 165
+chr.to.int$ -- 26
+cite$ -- 23
+duplicate$ -- 6046
+empty$ -- 1442
+format.name$ -- 639
+if$ -- 9226
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 58
-newline$ -- 23
-num.names$ -- 15
-pop$ -- 90
+missing$ -- 401
+newline$ -- 119
+num.names$ -- 115
+pop$ -- 578
 preamble$ -- 1
-purify$ -- 12
+purify$ -- 77
 quote$ -- 0
-skip$ -- 792
+skip$ -- 6200
 stack$ -- 1
-substring$ -- 307
-swap$ -- 232
-text.length$ -- 2
+substring$ -- 2308
+swap$ -- 2068
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 3
 warning$ -- 0
-while$ -- 22
+while$ -- 164
 width$ -- 0
-write$ -- 50
-(There were 2 warnings)
+write$ -- 345
+(There were 14 warnings)

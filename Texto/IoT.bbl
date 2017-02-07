@@ -5,12 +5,43 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[Amazon 2017]{amazon2017}
+\abntrefinfo{Amazon}{AMAZON}{2017}
+{AMAZON. \emph{Amazon Echo - Black}. 2017.
+Dispon{\'\i}vel em:
+  \url{https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E}.}
+
+\bibitem[Apple 2014]{apple2014}
+\abntrefinfo{Apple}{APPLE}{2014}
+{APPLE. \emph{Getting Started with iBeacon}. 2014.
+Dispon{\'\i}vel em:
+  \url{https://developer.apple.com/ibeacon/Getting-Started-with-iBeacon.pdf}.}
+
 \bibitem[Aswathy 2014]{survey-suresh}
 \abntrefinfo{Aswathy}{ASWATHY}{2014}
 {ASWATHY, P. S. J. V. D. D.~R. A state of the art review on the internet of
   things (iot).
 \emph{International Conference on Science, Engineering and Management
   Research}, 2014.}
+
+\bibitem[Cecilia e Sudarsanan 2016]{CECILIA2016}
+\abntrefinfo{Cecilia e Sudarsanan}{CECILIA; SUDARSANAN}{2016}
+{CECILIA, A.~A.; SUDARSANAN, K. A survey on smart grid. In:  \emph{2016
+  International Conference on Emerging Trends in Engineering, Technology and
+  Science (ICETETS)}. [S.l.: s.n.], 2016. p.~1--7.}
+
+\bibitem[Electric 2017]{generalelectric2017}
+\abntrefinfo{Electric}{ELECTRIC}{2017}
+{ELECTRIC, G. \emph{General Electric | SOBRE A GE – A primeira companhia
+  Digital Industrial.} 2017.
+Dispon{\'\i}vel em: \url{https://www.ge.com/br/sobre}.}
+
+\bibitem[Faludi 2010]{FALUDI2010}
+\abntrefinfo{Faludi}{FALUDI}{2010}
+{FALUDI, R. \emph{Building Wireless Sensor Networks: with ZigBee, XBee,
+  Arduino, and Processing}. O'Reilly Media, 2010.
+ISBN 9780596807733. Dispon{\'\i}vel em:
+  \url{https://www.amazon.com/Building-Wireless-Sensor-Networks-Processing-ebook/dp/B004GTLFHI\%3FSubscriptionId\%3D0JYN1NVW651KCA56C102\%26tag\%3Dtechkie-20\%26linkCode\%3Dxm2\%26camp\%3D2025\%26creative\%3D165953\%26creativeASIN\%3DB004GTLFHI}.}
 
 \bibitem[FINEP 2015]{kevin-ashton}
 \abntrefinfo{FINEP}{FINEP}{2015}
@@ -19,10 +50,107 @@
 Dispon{\'\i}vel em:
   \url{http://finep.gov.br/noticias/todas-noticias/4446-kevin-ashton-entrevista-exclusiva-com-o-criador-do-termo-internet-das-coisas}.}
 
+\bibitem[Finkenzeller 2011]{klaus2011}
+\abntrefinfo{Finkenzeller}{FINKENZELLER}{2011}
+{FINKENZELLER, K. \emph{RFID Handbook: Fundamentals and Applications in
+  Contactless Smart Cards, Radio Frequency Identification and Near-Field
+  Communication}. Wiley, 2011.
+ISBN 9780470695067. Dispon{\'\i}vel em:
+  \url{https://www.amazon.com/RFID-Handbook-Fundamentals-Identification-Communication-ebook/dp/B005HF2GH8\%3FSubscriptionId\%3D0JYN1NVW651KCA56C102\%26tag\%3Dtechkie-20\%26linkCode\%3Dxm2\%26camp\%3D2025\%26creative\%3D165953\%26creativeASIN\%3DB005HF2GH8}.}
+
+\bibitem[Forum 2017]{nfcforumabout2017}
+\abntrefinfo{Forum}{FORUM}{2017}
+{FORUM, N. \emph{About the Technology}. 2017.
+Dispon{\'\i}vel em:
+  \url{http://nfc-forum.org/what-is-nfc/about-the-technology/}.}
+
+\bibitem[Huang e Rudolph 2007]{huang2007bluetooth}
+\abntrefinfo{Huang e Rudolph}{HUANG; RUDOLPH}{2007}
+{HUANG, A.~S.; RUDOLPH, L. \emph{Bluetooth Essentials for Programmers}.
+  Cambridge University Press, 2007.
+ISBN 9781139465465. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=s\\_djgV7\\_sXAC}.}
+
+\bibitem[IEEE 2011]{IEEE802154_2011}
+\abntrefinfo{IEEE}{IEEE}{2011}
+{IEEE. \emph{IEEE 802.15.4-2011}. IEEE, 2011.
+ISBN 0738166847. Dispon{\'\i}vel em:
+  \url{https://www.amazon.com/IEEE-802-15-4-2011/dp/0738166847\%3FSubscriptionId\%3D0JYN1NVW651KCA56C102\%26tag\%3Dtechkie-20\%26linkCode\%3Dxm2\%26camp\%3D2025\%26creative\%3D165953\%26creativeASIN\%3D0738166847}.}
+
+\bibitem[Instruments 2017]{texasinstruments2017}
+\abntrefinfo{Instruments}{INSTRUMENTS}{2017}
+{INSTRUMENTS, T. \emph{Grid Infrastructure IC solutions}. 2017.
+Dispon{\'\i}vel em:
+  \url{http://www.ti.com/lsds/ti/applications/industrial/grid-infrastructure/overview.page}.}
+
+\bibitem[Jepson Don~Coleman 2014]{brianjepsondoncolemantomigoe2014}
+\abntrefinfo{Jepson Don~Coleman}{JEPSON DON~COLEMAN}{2014}
+{JEPSON DON~COLEMAN, T.~I. B. \emph{Beginning NFC: Near Field Communication
+  with Arduino, Android, and PhoneGap}. first. [S.l.]: O'Reilly Media, Inc.,
+  2014.}
+
+\bibitem[Kardach 2008]{jimkardach2008}
+\abntrefinfo{Kardach}{KARDACH}{2008}
+{KARDACH, J. \emph{Tech History: How Bluetooth got its name}. 2008.
+Dispon{\'\i}vel em:
+  \url{https://www.bluetooth.com/what-is-bluetooth-technology/how-it-works}.}
+
+\bibitem[Labs 2015]{linklabs2015}
+\abntrefinfo{Labs}{LABS}{2015}
+{LABS, L. \emph{Bluetooth Vs. Bluetooth Low Energy: What's The Difference?}
+  2015.
+Dispon{\'\i}vel em:
+  \url{https://www.link-labs.com/bluetooth-vs-bluetooth-low-energy/}.}
+
+\bibitem[Mandula et al. 2015]{mandula2015}
+\abntrefinfo{Mandula et al.}{MANDULA et al.}{2015}
+{MANDULA, K. et al. Mobile based home automation using internet of things(iot).
+  In:  \emph{2015 International Conference on Control, Instrumentation,
+  Communication and Computational Technologies (ICCICCT)}. [S.l.: s.n.], 2015.
+  p. 340--343.}
+
 \bibitem[Meola 2016]{andrewmeola2016}
 \abntrefinfo{Meola}{MEOLA}{2016}
 {MEOLA, A. \emph{What is the Internet of Things (IoT)?} 2016.
 Dispon{\'\i}vel em:
   \url{http://www.businessinsider.com/what-is-the-internet-of-things-definition-2016-8}.}
+
+\bibitem[NFC-Forum 2017]{nfcforumtypespec2017}
+\abntrefinfo{NFC-Forum}{NFC-FORUM}{2017}
+{NFC-FORUM. \emph{Tag Type Technical Specifications}. 2017.
+Dispon{\'\i}vel em:
+  \url{http://nfc-forum.org/our-work/specifications-and-application-documents/specifications/tag-type-technical-specifications/}.}
+
+\bibitem[Shibata e Sasaki 2016]{SHIBATA2016}
+\abntrefinfo{Shibata e Sasaki}{SHIBATA; SASAKI}{2016}
+{SHIBATA, Y.; SASAKI, K. Tourist information system based on beacon and
+  augumented reality technologies. In:  \emph{2016 19th International
+  Conference on Network-Based Information Systems (NBiS)}. [S.l.: s.n.], 2016.
+  p. 410--413.}
+
+\bibitem[SIG 2016]{bluetoothsig2016}
+\abntrefinfo{SIG}{SIG}{2016}
+{SIG, B. \emph{BLuetooth 5}. 2016.
+Dispon{\'\i}vel em:
+  \url{https://www.bluetooth.com/specifications/bluetooth-core-specification/bluetooth5}.}
+
+\bibitem[SIG 2017]{sig2017}
+\abntrefinfo{SIG}{SIG}{2017a}
+{SIG, B. \emph{Bluetooth Core Specification}. 2017.
+Dispon{\'\i}vel em:
+  \url{https://www.bluetooth.com/specifications/bluetooth-core-specification}.}
+
+\bibitem[SIG 2017]{bluetoothSIG2017}
+\abntrefinfo{SIG}{SIG}{2017b}
+{SIG, B. \emph{How It Works}. 2017.
+Dispon{\'\i}vel em:
+  \url{https://www.bluetooth.com/what-is-bluetooth-technology/how-it-works}.}
+
+\bibitem[Terdiman 2014]{danielterdiman2014}
+\abntrefinfo{Terdiman}{TERDIMAN}{2014}
+{TERDIMAN, D. \emph{How GE got on track toward the smartest locomotives ever}.
+  2014.
+Dispon{\'\i}vel em:
+  \url{https://www.cnet.com/news/at-ge-making-the-most-advanced-locomotives-in-history/}.}
 
 \end{thebibliography}
